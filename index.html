@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/brands.min.css" integrity="sha512-8RxmFOVaKQe/xtg6lbscU9DU0IRhURWEuiI0tXevv+lXbAHfkpamD4VKFQRto9WgfOJDwOZ74c/s9Yesv3VvIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Coffeetime</title>
+</head>
+<body>
+    <div class="w-screen h-screen flex flex-col overflow-x-hidden">
+        <div class="header w-screen flex my-16">
+            <div class="h100 w50 flex ml-16">
+                <div id="pageContainer" class="flex">
+                    <div id="pageChoice" class="h40 flex text-bottom items-bottom fakeborder marginForHeader pointer">Home</div>
+                    <div id="pageChoice" class="h40 flex text-bottom items-bottom fakeborder marginForHeader pointer">About</div>
+                    <div id="pageChoice" class="h40 flex text-bottom items-bottom fakeborder marginForHeader pointer">Menu</div>
+                    <div id="pageChoice" class="h40 flex text-bottom items-bottom fakeborder marginForHeader pointer">Blog</div>
+                    <div id="pageChoice" class="h40 flex text-bottom items-bottom fakeborder marginForHeader pointer">Shop</div>
+                    <div id="pageChoice" class="h40 flex text-bottom items-bottom fakeborder marginForHeader pointer">Contact</div>
+                </div>
+                <div class="iconForHeader">
+                    <i id="mobileBar" class="fa-solid fa-bars"></i>
+                </div>
+                
+            </div>
+            <div class="h100 w50 flex ml-16 justify-end items-center">
+                <img class="headerLogo" src="svgs/coffee_bean.svg"/>
+                <div id="yourLogoHeader" class="h40 flex text-bottom items-bottom fakeborder marginForHeader uppercase pointer">Your logo</div>
+            </div>
+        </div>
+        <div class="main flex flex-col">
+
+            <div name="first-group" class="w100 section-group relative">
+                <div id="first-group-text-block" class="w50 h100 flex flex-col m-8">
+                    <h1 class="grand-hotel-regular title-first-group ml-16" id="coffee-main-title">Coffee Time</h1>
+                    <h2 class="ml-16 uppercase my-16 underTitleFont">Your headline</h2>
+                    <p class="ml-16 my-16 textFont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aperiam sapiente explicabo! Rerum libero pariatur corporis. Culpa, a repudiandae vero tempora dolor officiis perferendis inventore laudantium cumque, omnis distinctio qui.</p>
+                    <div class="orderButton flex justify-center items-center ml-16 pointer">Order Now</div>
+                </div>
+                <img id="first-group-coffee-mug" class="absolute first-group-side-image" src="svgs/coffee_mug_first_group.svg"/>
+                <img id= "first-group-machine-icon" class="absolute opacity06" src="svgs/coffee_machine.svg"/>
+                <img id= "first-group-bean-icon" class="absolute opacity06" src="svgs/coffee_bean_icon.svg"/>
+                <img id= "first-group-mug-icon" class="absolute opacity06" src="svgs/coffee_mug.svg"/>
+                <img id= "first-group-extra-icon" class="absolute opacity06" src="svgs/coffee_machine.svg"/>
+            </div>
+
+            <div name="second-group" class="w100 flex flex-col container-height relative">
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L48,186.7C96,149,192,75,288,53.3C384,32,480,64,576,101.3C672,139,768,181,864,186.7C960,192,1056,160,1152,149.3C1248,139,1344,149,1392,154.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z" data-darkreader-inline-fill="" style="--darkreader-inline-fill: #007acc;"></path></svg> -->
+                <img src="svgs/wave_upper_second_group.svg"/>
+                <div class="waveBox flex" id="second-group-wavebox">
+                    <div class="w50 h100 second-group-title-h flex items-center text-center flex-col" id="second-group-info">
+                        <div class="flex container-height gap25 flex-col justify-start text-left">
+                            <h1 class="grand-hotel-regular title-first-group ml-16 vertical-text">
+                                Black 
+                            </h1>
+                            <h1 id="second-group-title-text" class="grand-hotel-regular title-first-group ml-16 vertical-text">
+                                Coffees 
+                            </h1>
+                        </div>
+                        <div class="w50">
+                            <div class="orderButton bg-black flex justify-center items-center ml-16 pointer" id="second-group-order-now">Order Now</div>
+                        </div>
+                    </div>
+                    <div class="w50 h100 flex flex-col" id="second-group-info">
+                        <div class="w90 h60 flex justify-center m-8 items-center" id="need-extension-second-group">
+                            <!-- <img id="second-group-wavy-image" src="svgs/wavy_circle_image.svg"/> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:serif="http://www.serif.com/" viewBox="0 0 100 126.25" version="1.1" xml:space="preserve" style="" x="0px" y="0px" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+                                <path d="M27.217,21.776c3.441,-1.12 6.609,-2.949 9.298,-5.369c1.054,-0.945 2.339,-1.664 3.799,-2.055c1.46,-0.391 2.932,-0.412 4.317,-0.119c3.54,0.751 7.198,0.751 10.737,-0.001c1.386,-0.292 2.858,-0.271 4.318,0.12c1.46,0.391 2.745,1.11 3.798,2.055c2.69,2.42 5.858,4.249 9.299,5.368c1.346,0.44 2.611,1.194 3.679,2.263c1.069,1.068 1.823,2.333 2.262,3.679c1.12,3.441 2.949,6.609 5.369,9.298c0.945,1.054 1.664,2.339 2.055,3.799c0.391,1.46 0.412,2.932 0.119,4.317c-0.751,3.54 -0.751,7.198 0.001,10.737c0.292,1.386 0.271,2.858 -0.12,4.318c-0.391,1.46 -1.11,2.745 -2.055,3.798c-2.42,2.69 -4.249,5.858 -5.368,9.299c-0.44,1.346 -1.194,2.611 -2.263,3.679c-1.068,1.069 -2.333,1.823 -3.679,2.262c-3.441,1.12 -6.609,2.949 -9.298,5.369c-1.054,0.945 -2.339,1.664 -3.799,2.055c-1.46,0.391 -2.932,0.412 -4.317,0.119c-3.54,-0.751 -7.198,-0.751 -10.737,0.001c-1.386,0.292 -2.858,0.271 -4.318,-0.12c-1.46,-0.391 -2.745,-1.11 -3.798,-2.055c-2.69,-2.42 -5.858,-4.249 -9.299,-5.368c-1.346,-0.44 -2.611,-1.194 -3.679,-2.263c-1.069,-1.068 -1.823,-2.333 -2.262,-3.679c-1.12,-3.441 -2.949,-6.609 -5.369,-9.298c-0.945,-1.054 -1.664,-2.339 -2.055,-3.799c-0.391,-1.46 -0.412,-2.932 -0.119,-4.317c0.751,-3.54 0.751,-7.198 -0.001,-10.737c-0.292,-1.386 -0.271,-2.858 0.12,-4.318c0.391,-1.46 1.11,-2.745 2.055,-3.798c2.42,-2.69 4.249,-5.858 5.368,-9.299c0.44,-1.346 1.194,-2.611 2.263,-3.679c1.068,-1.069 2.333,-1.823 3.679,-2.262Z"/>
+                                <image width="100" height="100" href="images/second-group-black-coffee.jpeg" clip-path="url(#circleClip)"/>
+                                <defs>
+                                <clipPath id="circleClip">
+                                    <path d="M27.217,21.776c3.441,-1.12 6.609,-2.949 9.298,-5.369c1.054,-0.945 2.339,-1.664 3.799,-2.055c1.46,-0.391 2.932,-0.412 4.317,-0.119c3.54,0.751 7.198,0.751 10.737,-0.001c1.386,-0.292 2.858,-0.271 4.318,0.12c1.46,0.391 2.745,1.11 3.798,2.055c2.69,2.42 5.858,4.249 9.299,5.368c1.346,0.44 2.611,1.194 3.679,2.263c1.069,1.068 1.823,2.333 2.262,3.679c1.12,3.441 2.949,6.609 5.369,9.298c0.945,1.054 1.664,2.339 2.055,3.799c0.391,1.46 0.412,2.932 0.119,4.317c-0.751,3.54 -0.751,7.198 0.001,10.737c0.292,1.386 0.271,2.858 -0.12,4.318c-0.391,1.46 -1.11,2.745 -2.055,3.798c-2.42,2.69 -4.249,5.858 -5.368,9.299c-0.44,1.346 -1.194,2.611 -2.263,3.679c-1.068,1.069 -2.333,1.823 -3.679,2.262c-3.441,1.12 -6.609,2.949 -9.298,5.369c-1.054,0.945 -2.339,1.664 -3.799,2.055c-1.46,0.391 -2.932,0.412 -4.317,0.119c-3.54,-0.751 -7.198,-0.751 -10.737,0.001c-1.386,0.292 -2.858,0.271 -4.318,-0.12c-1.46,-0.391 -2.745,-1.11 -3.798,-2.055c-2.69,-2.42 -5.858,-4.249 -9.299,-5.368c-1.346,-0.44 -2.611,-1.194 -3.679,-2.263c-1.069,-1.068 -1.823,-2.333 -2.262,-3.679c-1.12,-3.441 -2.949,-6.609 -5.369,-9.298c-0.945,-1.054 -1.664,-2.339 -2.055,-3.799c-0.391,-1.46 -0.412,-2.932 -0.119,-4.317c0.751,-3.54 0.751,-7.198 -0.001,-10.737c-0.292,-1.386 -0.271,-2.858 0.12,-4.318c0.391,-1.46 1.11,-2.745 2.055,-3.798c2.42,-2.69 4.249,-5.858 5.368,-9.299c0.44,-1.346 1.194,-2.611 2.263,-3.679c1.068,-1.069 2.333,-1.823 3.679,-2.262Z"/>
+                                  </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="w80 h40 flex justify-center m-8 items-center text-center textFont vertical-text" id="need-extension-second-group">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus nisi omnis distinctio, nam excepturi minus, dolorum eligendi maiores quis facere officia vel praesentium, sed iusto laudantium tempora officiis! Est, dolor.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,160L40,138.7C80,117,160,75,240,101.3C320,128,400,224,480,224C560,224,640,128,720,106.7C800,85,880,139,960,133.3C1040,128,1120,64,1200,58.7C1280,53,1360,107,1400,133.3L1440,160L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z" data-darkreader-inline-fill="" style="--darkreader-inline-fill: #007acc;"></path></svg> -->
+                <img src="svgs/wave_lower_second_group.svg"/>
+                <img id= "second-group-machine-icon" class="absolute opacity06" src="svgs/coffee_machine.svg"/>
+                <img id= "second-group-bean-icon-1" class="absolute opacity06" src="svgs/coffee_bean_icon.svg"/>
+                <img id= "second-group-bean-icon-2" class="absolute deg315 opacity06" src="svgs/coffee_bean_icon.svg"/>
+                <img id= "second-group-bean-icon-3" class="absolute opacity06" src="svgs/coffee_bean_icon.svg"/>
+                <img id= "second-group-bean-icon-4" class="absolute deg300 opacity06" src="svgs/coffee_bean_icon.svg"/>
+                <img id= "second-group-mug-icon" class="absolute opacity06" src="svgs/coffee_mug.svg"/>
+            </div>
+
+            <div name="third-group" class="w100 flex container-height relative" id="third-group">
+                <div class="w50 h100 flex flex-col" id="third-group-info">
+                    <div class="w90 h60 flex justify-center m-8 items-center" id="need-extension-third-group">
+                        <!-- <img id="third-group-wavy-image" src="svgs/wavy_circle_image.svg"/> -->
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:serif="http://www.serif.com/" viewBox="0 0 100 126.25" version="1.1" xml:space="preserve" style="" x="0px" y="0px" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+                            <path d="M27.217,21.776c3.441,-1.12 6.609,-2.949 9.298,-5.369c1.054,-0.945 2.339,-1.664 3.799,-2.055c1.46,-0.391 2.932,-0.412 4.317,-0.119c3.54,0.751 7.198,0.751 10.737,-0.001c1.386,-0.292 2.858,-0.271 4.318,0.12c1.46,0.391 2.745,1.11 3.798,2.055c2.69,2.42 5.858,4.249 9.299,5.368c1.346,0.44 2.611,1.194 3.679,2.263c1.069,1.068 1.823,2.333 2.262,3.679c1.12,3.441 2.949,6.609 5.369,9.298c0.945,1.054 1.664,2.339 2.055,3.799c0.391,1.46 0.412,2.932 0.119,4.317c-0.751,3.54 -0.751,7.198 0.001,10.737c0.292,1.386 0.271,2.858 -0.12,4.318c-0.391,1.46 -1.11,2.745 -2.055,3.798c-2.42,2.69 -4.249,5.858 -5.368,9.299c-0.44,1.346 -1.194,2.611 -2.263,3.679c-1.068,1.069 -2.333,1.823 -3.679,2.262c-3.441,1.12 -6.609,2.949 -9.298,5.369c-1.054,0.945 -2.339,1.664 -3.799,2.055c-1.46,0.391 -2.932,0.412 -4.317,0.119c-3.54,-0.751 -7.198,-0.751 -10.737,0.001c-1.386,0.292 -2.858,0.271 -4.318,-0.12c-1.46,-0.391 -2.745,-1.11 -3.798,-2.055c-2.69,-2.42 -5.858,-4.249 -9.299,-5.368c-1.346,-0.44 -2.611,-1.194 -3.679,-2.263c-1.069,-1.068 -1.823,-2.333 -2.262,-3.679c-1.12,-3.441 -2.949,-6.609 -5.369,-9.298c-0.945,-1.054 -1.664,-2.339 -2.055,-3.799c-0.391,-1.46 -0.412,-2.932 -0.119,-4.317c0.751,-3.54 0.751,-7.198 -0.001,-10.737c-0.292,-1.386 -0.271,-2.858 0.12,-4.318c0.391,-1.46 1.11,-2.745 2.055,-3.798c2.42,-2.69 4.249,-5.858 5.368,-9.299c0.44,-1.346 1.194,-2.611 2.263,-3.679c1.068,-1.069 2.333,-1.823 3.679,-2.262Z"/>
+                            <image width="100" height="100" href="images/third-group-hot-coffee.webp" clip-path="url(#circleClip)"/>
+                            <defs>
+                            <clipPath id="circleClip">
+                                <path d="M27.217,21.776c3.441,-1.12 6.609,-2.949 9.298,-5.369c1.054,-0.945 2.339,-1.664 3.799,-2.055c1.46,-0.391 2.932,-0.412 4.317,-0.119c3.54,0.751 7.198,0.751 10.737,-0.001c1.386,-0.292 2.858,-0.271 4.318,0.12c1.46,0.391 2.745,1.11 3.798,2.055c2.69,2.42 5.858,4.249 9.299,5.368c1.346,0.44 2.611,1.194 3.679,2.263c1.069,1.068 1.823,2.333 2.262,3.679c1.12,3.441 2.949,6.609 5.369,9.298c0.945,1.054 1.664,2.339 2.055,3.799c0.391,1.46 0.412,2.932 0.119,4.317c-0.751,3.54 -0.751,7.198 0.001,10.737c0.292,1.386 0.271,2.858 -0.12,4.318c-0.391,1.46 -1.11,2.745 -2.055,3.798c-2.42,2.69 -4.249,5.858 -5.368,9.299c-0.44,1.346 -1.194,2.611 -2.263,3.679c-1.068,1.069 -2.333,1.823 -3.679,2.262c-3.441,1.12 -6.609,2.949 -9.298,5.369c-1.054,0.945 -2.339,1.664 -3.799,2.055c-1.46,0.391 -2.932,0.412 -4.317,0.119c-3.54,-0.751 -7.198,-0.751 -10.737,0.001c-1.386,0.292 -2.858,0.271 -4.318,-0.12c-1.46,-0.391 -2.745,-1.11 -3.798,-2.055c-2.69,-2.42 -5.858,-4.249 -9.299,-5.368c-1.346,-0.44 -2.611,-1.194 -3.679,-2.263c-1.069,-1.068 -1.823,-2.333 -2.262,-3.679c-1.12,-3.441 -2.949,-6.609 -5.369,-9.298c-0.945,-1.054 -1.664,-2.339 -2.055,-3.799c-0.391,-1.46 -0.412,-2.932 -0.119,-4.317c0.751,-3.54 0.751,-7.198 -0.001,-10.737c-0.292,-1.386 -0.271,-2.858 0.12,-4.318c0.391,-1.46 1.11,-2.745 2.055,-3.798c2.42,-2.69 4.249,-5.858 5.368,-9.299c0.44,-1.346 1.194,-2.611 2.263,-3.679c1.068,-1.069 2.333,-1.823 3.679,-2.262Z"/>
+                              </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="w100 h40 flex justify-center m-8 items-center text-center textFont vertical-text" id="need-pull-third-group">
+                        <p class="thirdFourthGroupText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus nisi omnis distinctio, nam excepturi minus, dolorum eligendi maiores quis facere officia vel praesentium, sed iusto laudantium tempora officiis! Est, dolor.</p>
+                    </div>
+                </div>
+                <div class="w50 h100 second-group-title-h flex items-center text-center flex-col" id="third-group-info">
+                    <div class="flex container-height gap25 flex-col justify-start text-right" id="third-group-text">
+                        <h1 class="grand-hotel-regular title-first-group ml-16 vertical-text">
+                            Hot 
+                        </h1>
+                        <h1 id="second-group-title-text" class="grand-hotel-regular title-first-group ml-16 vertical-text">
+                            Coffees 
+                        </h1>
+                    </div>
+                    <div class="w50">
+                        <div class="orderButton flex justify-center items-center ml-16 pointer" id="fourth-group-order-now">Order Now</div>
+                    </div>
+                </div>
+                <img id= "third-group-machine-icon" class="absolute deg70 opacity06" src="svgs/coffee_machine.svg"/>
+                <img id= "third-group-bean-icon-1" class="absolute neg15 opacity06" src="svgs/coffee_bean_icon.svg"/>
+                <img id= "third-group-bean-icon-2" class="absolute opacity06" src="svgs/coffee_bean_icon.svg"/>
+                <img id= "third-group-mug-icon" class="absolute deg315 opacity06" src="svgs/coffee_mug.svg"/>
+            </div>
+
+            <div name="fourth-group" class="w100 flex container-height relative" id="fourth-group">
+                <div class="w50 h100 second-group-title-h flex items-center text-center flex-col" id="fourth-group-info">
+                    <div class="flex container-height gap25 flex-col justify-start text-left" id="fourth-group-text">
+                        <h1 class="grand-hotel-regular title-first-group ml-16 vertical-text">
+                            White 
+                        </h1>
+                        <h1 id="second-group-title-text" class="grand-hotel-regular title-first-group ml-16 vertical-text">
+                            Coffees 
+                        </h1>
+                    </div>
+                    <div class="w50">
+                        <div class="orderButton flex justify-center items-center ml-16 pointer" id="fourth-group-order-now">Order Now</div>
+                    </div>
+                </div>
+                <div class="w50 h100 flex flex-col" id="fourth-group-info">
+                    <div class="w90 h60 flex justify-center m-8 items-center" id="need-extension-fourth-group">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:serif="http://www.serif.com/" viewBox="0 0 100 126.25" version="1.1" xml:space="preserve" style="" x="0px" y="0px" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+                            <path d="M27.217,21.776c3.441,-1.12 6.609,-2.949 9.298,-5.369c1.054,-0.945 2.339,-1.664 3.799,-2.055c1.46,-0.391 2.932,-0.412 4.317,-0.119c3.54,0.751 7.198,0.751 10.737,-0.001c1.386,-0.292 2.858,-0.271 4.318,0.12c1.46,0.391 2.745,1.11 3.798,2.055c2.69,2.42 5.858,4.249 9.299,5.368c1.346,0.44 2.611,1.194 3.679,2.263c1.069,1.068 1.823,2.333 2.262,3.679c1.12,3.441 2.949,6.609 5.369,9.298c0.945,1.054 1.664,2.339 2.055,3.799c0.391,1.46 0.412,2.932 0.119,4.317c-0.751,3.54 -0.751,7.198 0.001,10.737c0.292,1.386 0.271,2.858 -0.12,4.318c-0.391,1.46 -1.11,2.745 -2.055,3.798c-2.42,2.69 -4.249,5.858 -5.368,9.299c-0.44,1.346 -1.194,2.611 -2.263,3.679c-1.068,1.069 -2.333,1.823 -3.679,2.262c-3.441,1.12 -6.609,2.949 -9.298,5.369c-1.054,0.945 -2.339,1.664 -3.799,2.055c-1.46,0.391 -2.932,0.412 -4.317,0.119c-3.54,-0.751 -7.198,-0.751 -10.737,0.001c-1.386,0.292 -2.858,0.271 -4.318,-0.12c-1.46,-0.391 -2.745,-1.11 -3.798,-2.055c-2.69,-2.42 -5.858,-4.249 -9.299,-5.368c-1.346,-0.44 -2.611,-1.194 -3.679,-2.263c-1.069,-1.068 -1.823,-2.333 -2.262,-3.679c-1.12,-3.441 -2.949,-6.609 -5.369,-9.298c-0.945,-1.054 -1.664,-2.339 -2.055,-3.799c-0.391,-1.46 -0.412,-2.932 -0.119,-4.317c0.751,-3.54 0.751,-7.198 -0.001,-10.737c-0.292,-1.386 -0.271,-2.858 0.12,-4.318c0.391,-1.46 1.11,-2.745 2.055,-3.798c2.42,-2.69 4.249,-5.858 5.368,-9.299c0.44,-1.346 1.194,-2.611 2.263,-3.679c1.068,-1.069 2.333,-1.823 3.679,-2.262Z"/>
+                            <image width="100" height="100" href="images/fourth-group-white-coffee.jpeg" clip-path="url(#circleClip)"/>
+                            <defs>
+                            <clipPath id="circleClip">
+                                <path d="M27.217,21.776c3.441,-1.12 6.609,-2.949 9.298,-5.369c1.054,-0.945 2.339,-1.664 3.799,-2.055c1.46,-0.391 2.932,-0.412 4.317,-0.119c3.54,0.751 7.198,0.751 10.737,-0.001c1.386,-0.292 2.858,-0.271 4.318,0.12c1.46,0.391 2.745,1.11 3.798,2.055c2.69,2.42 5.858,4.249 9.299,5.368c1.346,0.44 2.611,1.194 3.679,2.263c1.069,1.068 1.823,2.333 2.262,3.679c1.12,3.441 2.949,6.609 5.369,9.298c0.945,1.054 1.664,2.339 2.055,3.799c0.391,1.46 0.412,2.932 0.119,4.317c-0.751,3.54 -0.751,7.198 0.001,10.737c0.292,1.386 0.271,2.858 -0.12,4.318c-0.391,1.46 -1.11,2.745 -2.055,3.798c-2.42,2.69 -4.249,5.858 -5.368,9.299c-0.44,1.346 -1.194,2.611 -2.263,3.679c-1.068,1.069 -2.333,1.823 -3.679,2.262c-3.441,1.12 -6.609,2.949 -9.298,5.369c-1.054,0.945 -2.339,1.664 -3.799,2.055c-1.46,0.391 -2.932,0.412 -4.317,0.119c-3.54,-0.751 -7.198,-0.751 -10.737,0.001c-1.386,0.292 -2.858,0.271 -4.318,-0.12c-1.46,-0.391 -2.745,-1.11 -3.798,-2.055c-2.69,-2.42 -5.858,-4.249 -9.299,-5.368c-1.346,-0.44 -2.611,-1.194 -3.679,-2.263c-1.069,-1.068 -1.823,-2.333 -2.262,-3.679c-1.12,-3.441 -2.949,-6.609 -5.369,-9.298c-0.945,-1.054 -1.664,-2.339 -2.055,-3.799c-0.391,-1.46 -0.412,-2.932 -0.119,-4.317c0.751,-3.54 0.751,-7.198 -0.001,-10.737c-0.292,-1.386 -0.271,-2.858 0.12,-4.318c0.391,-1.46 1.11,-2.745 2.055,-3.798c2.42,-2.69 4.249,-5.858 5.368,-9.299c0.44,-1.346 1.194,-2.611 2.263,-3.679c1.068,-1.069 2.333,-1.823 3.679,-2.262Z"/>
+                              </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="w100 h40 flex justify-center m-8 items-center text-center textFont vertical-text" id="need-pull-fourth-group">
+                        <p class="thirdFourthGroupText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus nisi omnis distinctio, nam excepturi minus, dolorum eligendi maiores quis facere officia vel praesentium, sed iusto laudantium tempora officiis! Est, dolor.</p>
+                    </div>
+                </div>
+                <img id= "fourth-group-machine-icon" class="absolute deg70 opacity06" src="svgs/coffee_machine.svg"/>
+                <img id= "fourth-group-bean-icon-1" class="absolute neg15 opacity06" src="svgs/coffee_bean_icon.svg"/>
+                <img id= "fourth-group-bean-icon-2" class="absolute opacity06" src="svgs/coffee_bean_icon.svg"/>
+                <img id= "fourth-group-mug-icon" class="absolute deg90 opacity06" src="svgs/coffee_mug.svg"/>
+            </div>
+
+            <div name="fifth-group" class="w100 flex container-height relative" id="fifth-group">
+                <div class="flex w100 text-center justify-center flex-col items-center">
+                    <h1 id="" class="grand-hotel-regular title-first-group ml-16 vertical-text">Voucher</h1>
+                    <div class="voucher relative flex">
+                        <div class="flex h15 items-center absolute voucher-logo-div w40 justify-center">
+                            <div class="relative w100">
+                                <p class="uppercase underTitleFont" id="voucher-logo-upper">YOUR LOGO</p>
+                                <img id= "voucher-logo-bean" class="absolute" src="svgs/coffee_bean_icon.svg"/>
+                            </div>
+                        </div>
+                        <div class="flex flex-col absolute w70 items-center justify-center text-center" id="voucher-information">
+                            <h1 class="grand-hotel-regular vertical-text" id="voucher-discount-text">Voucher Discount</h1>
+                            <p class="vertical-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In provident adipisci dolore asperiores perspiciatis eum ducimus consequuntur doloremque beatae.</p>
+                            <div class="voucher-validate w50 flex items-center justify-center flex-wrap pointer my-16"><p class="uppercase">validate until: 01.05.2020</p></div> 
+                        </div>
+                        <div class="flex absolute w50 items-center justify-center" id="voucher-social-icons">
+                            <div class="voucher-icon-circle flex justify-center items-center"><i class="fa-brands fa-facebook-f pointer black"></i></div>
+                            <p id="voucher-social" class="m-8">your account</p>
+                            <div class="voucher-icon-circle flex justify-center items-center"><i class="fa-brands fa-instagram pointer black"></i></div>
+                            <p id="voucher-social" class="m-8">your account</p>
+                            <div class="voucher-icon-circle flex justify-center items-center"><i class="fa-brands fa-twitter pointer black"></i></div>
+                            <p id="voucher-social" class="m-8">your account</p>
+                        </div>
+                        <img class="h90 absolute top0" src="svgs/voucher-picture.svg" id="voucher-coffee-picture"/>
+                        <img class="w20 absolute voucher-certificate" src="svgs/voucher-certificate.svg"/>
+                        <img class="w60 absolute voucher-wave-lower" src="svgs/voucher-wave-lower.svg"/>
+                        <img class="w65 absolute voucher-wave-upper" src="svgs/voucher-wave-upper.svg"/>
+                        <img id= "voucher-machine-icon" class="absolute opacity06" src="svgs/coffee_machine.svg"/>
+                        <img id= "voucher-bean-icon-1" class="absolute opacity06" src="svgs/coffee_bean_icon.svg"/>
+                        <img id= "voucher-bean-icon-2" class="absolute opacity06" src="svgs/coffee_bean_icon.svg"/>
+                        <img id= "voucher-mug-icon" class="absolute opacity06" src="svgs/coffee_mug.svg"/>
+                    </div>
+                    <!-- <img src="images/voucher.png" class="voucher flex flex-col justify-center"></img> -->
+                    <div class="voucherButton flex items-center justify-center flex-wrap my-16 pointer"><p>Get Voucher Now</p></div> 
+                </div>
+                <img id= "fifth-group-machine-icon" class="absolute opacity06" src="svgs/coffee_machine.svg"/>
+                <img id= "fifth-group-bean-icon-1" class="absolute opacity06" src="svgs/coffee_bean_icon.svg"/>
+                <img id= "fifth-group-mug-icon" class="absolute opacity06" src="svgs/coffee_mug.svg"/>
+            </div>
+
+            <div name="sixth-group" class="w100 flex container-height relative my-16">
+                <div class="flex w100 text-center justify-center items-center flex-col" id="">
+                    <h1 id="" class="grand-hotel-regular title-first-group ml-16 vertical-text">Customer Reviews</h1>
+                    <div class="w100 flex" id="sixth-group-info-container">
+                        <div class="w50 h100 second-group-title-h flex items-center text-center flex-col" id="sixth-group-info">
+                            <!-- <img id="fourth-group-wavy-image" src="svgs/wavy_circle_image.svg"/> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:serif="http://www.serif.com/" viewBox="0 0 100 126.25" version="1.1" xml:space="preserve" style="" x="0px" y="0px" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+                                <path d="M27.217,21.776c3.441,-1.12 6.609,-2.949 9.298,-5.369c1.054,-0.945 2.339,-1.664 3.799,-2.055c1.46,-0.391 2.932,-0.412 4.317,-0.119c3.54,0.751 7.198,0.751 10.737,-0.001c1.386,-0.292 2.858,-0.271 4.318,0.12c1.46,0.391 2.745,1.11 3.798,2.055c2.69,2.42 5.858,4.249 9.299,5.368c1.346,0.44 2.611,1.194 3.679,2.263c1.069,1.068 1.823,2.333 2.262,3.679c1.12,3.441 2.949,6.609 5.369,9.298c0.945,1.054 1.664,2.339 2.055,3.799c0.391,1.46 0.412,2.932 0.119,4.317c-0.751,3.54 -0.751,7.198 0.001,10.737c0.292,1.386 0.271,2.858 -0.12,4.318c-0.391,1.46 -1.11,2.745 -2.055,3.798c-2.42,2.69 -4.249,5.858 -5.368,9.299c-0.44,1.346 -1.194,2.611 -2.263,3.679c-1.068,1.069 -2.333,1.823 -3.679,2.262c-3.441,1.12 -6.609,2.949 -9.298,5.369c-1.054,0.945 -2.339,1.664 -3.799,2.055c-1.46,0.391 -2.932,0.412 -4.317,0.119c-3.54,-0.751 -7.198,-0.751 -10.737,0.001c-1.386,0.292 -2.858,0.271 -4.318,-0.12c-1.46,-0.391 -2.745,-1.11 -3.798,-2.055c-2.69,-2.42 -5.858,-4.249 -9.299,-5.368c-1.346,-0.44 -2.611,-1.194 -3.679,-2.263c-1.069,-1.068 -1.823,-2.333 -2.262,-3.679c-1.12,-3.441 -2.949,-6.609 -5.369,-9.298c-0.945,-1.054 -1.664,-2.339 -2.055,-3.799c-0.391,-1.46 -0.412,-2.932 -0.119,-4.317c0.751,-3.54 0.751,-7.198 -0.001,-10.737c-0.292,-1.386 -0.271,-2.858 0.12,-4.318c0.391,-1.46 1.11,-2.745 2.055,-3.798c2.42,-2.69 4.249,-5.858 5.368,-9.299c0.44,-1.346 1.194,-2.611 2.263,-3.679c1.068,-1.069 2.333,-1.823 3.679,-2.262Z"/>
+                                <image width="100" height="100" href="images/sixth-group-man-photo.jpeg" clip-path="url(#circleClip)"/>
+                                <defs>
+                                <clipPath id="circleClip">
+                                    <path d="M27.217,21.776c3.441,-1.12 6.609,-2.949 9.298,-5.369c1.054,-0.945 2.339,-1.664 3.799,-2.055c1.46,-0.391 2.932,-0.412 4.317,-0.119c3.54,0.751 7.198,0.751 10.737,-0.001c1.386,-0.292 2.858,-0.271 4.318,0.12c1.46,0.391 2.745,1.11 3.798,2.055c2.69,2.42 5.858,4.249 9.299,5.368c1.346,0.44 2.611,1.194 3.679,2.263c1.069,1.068 1.823,2.333 2.262,3.679c1.12,3.441 2.949,6.609 5.369,9.298c0.945,1.054 1.664,2.339 2.055,3.799c0.391,1.46 0.412,2.932 0.119,4.317c-0.751,3.54 -0.751,7.198 0.001,10.737c0.292,1.386 0.271,2.858 -0.12,4.318c-0.391,1.46 -1.11,2.745 -2.055,3.798c-2.42,2.69 -4.249,5.858 -5.368,9.299c-0.44,1.346 -1.194,2.611 -2.263,3.679c-1.068,1.069 -2.333,1.823 -3.679,2.262c-3.441,1.12 -6.609,2.949 -9.298,5.369c-1.054,0.945 -2.339,1.664 -3.799,2.055c-1.46,0.391 -2.932,0.412 -4.317,0.119c-3.54,-0.751 -7.198,-0.751 -10.737,0.001c-1.386,0.292 -2.858,0.271 -4.318,-0.12c-1.46,-0.391 -2.745,-1.11 -3.798,-2.055c-2.69,-2.42 -5.858,-4.249 -9.299,-5.368c-1.346,-0.44 -2.611,-1.194 -3.679,-2.263c-1.069,-1.068 -1.823,-2.333 -2.262,-3.679c-1.12,-3.441 -2.949,-6.609 -5.369,-9.298c-0.945,-1.054 -1.664,-2.339 -2.055,-3.799c-0.391,-1.46 -0.412,-2.932 -0.119,-4.317c0.751,-3.54 0.751,-7.198 -0.001,-10.737c-0.292,-1.386 -0.271,-2.858 0.12,-4.318c0.391,-1.46 1.11,-2.745 2.055,-3.798c2.42,-2.69 4.249,-5.858 5.368,-9.299c0.44,-1.346 1.194,-2.611 2.263,-3.679c1.068,-1.069 2.333,-1.823 3.679,-2.262Z"/>
+                                  </clipPath>
+                                </defs>
+                            </svg>
+                            <h1 class="grand-hotel-regular" id="review-names">John Peter</h1>
+                            <p class="underTitleFont w90 vertical-text">yeahbrosoanywa ysithough tandyea hliket atsowhatwhywiat who?</p>
+                        </div>
+                        <div class="w50 h100 second-group-title-h flex items-center text-center flex-col" id="sixth-group-info">
+                            <!-- <img id="fourth-group-wavy-image" src="svgs/wavy_circle_image.svg"/> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:serif="http://www.serif.com/" viewBox="0 0 100 126.25" version="1.1" xml:space="preserve" style="" x="0px" y="0px" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+                                <path d="M27.217,21.776c3.441,-1.12 6.609,-2.949 9.298,-5.369c1.054,-0.945 2.339,-1.664 3.799,-2.055c1.46,-0.391 2.932,-0.412 4.317,-0.119c3.54,0.751 7.198,0.751 10.737,-0.001c1.386,-0.292 2.858,-0.271 4.318,0.12c1.46,0.391 2.745,1.11 3.798,2.055c2.69,2.42 5.858,4.249 9.299,5.368c1.346,0.44 2.611,1.194 3.679,2.263c1.069,1.068 1.823,2.333 2.262,3.679c1.12,3.441 2.949,6.609 5.369,9.298c0.945,1.054 1.664,2.339 2.055,3.799c0.391,1.46 0.412,2.932 0.119,4.317c-0.751,3.54 -0.751,7.198 0.001,10.737c0.292,1.386 0.271,2.858 -0.12,4.318c-0.391,1.46 -1.11,2.745 -2.055,3.798c-2.42,2.69 -4.249,5.858 -5.368,9.299c-0.44,1.346 -1.194,2.611 -2.263,3.679c-1.068,1.069 -2.333,1.823 -3.679,2.262c-3.441,1.12 -6.609,2.949 -9.298,5.369c-1.054,0.945 -2.339,1.664 -3.799,2.055c-1.46,0.391 -2.932,0.412 -4.317,0.119c-3.54,-0.751 -7.198,-0.751 -10.737,0.001c-1.386,0.292 -2.858,0.271 -4.318,-0.12c-1.46,-0.391 -2.745,-1.11 -3.798,-2.055c-2.69,-2.42 -5.858,-4.249 -9.299,-5.368c-1.346,-0.44 -2.611,-1.194 -3.679,-2.263c-1.069,-1.068 -1.823,-2.333 -2.262,-3.679c-1.12,-3.441 -2.949,-6.609 -5.369,-9.298c-0.945,-1.054 -1.664,-2.339 -2.055,-3.799c-0.391,-1.46 -0.412,-2.932 -0.119,-4.317c0.751,-3.54 0.751,-7.198 -0.001,-10.737c-0.292,-1.386 -0.271,-2.858 0.12,-4.318c0.391,-1.46 1.11,-2.745 2.055,-3.798c2.42,-2.69 4.249,-5.858 5.368,-9.299c0.44,-1.346 1.194,-2.611 2.263,-3.679c1.068,-1.069 2.333,-1.823 3.679,-2.262Z"/>
+                                <image width="100" height="100" href="images/sixth-group-woman-photo.jpeg" clip-path="url(#circleClip)"/>
+                                <defs>
+                                <clipPath id="circleClip">
+                                    <path d="M27.217,21.776c3.441,-1.12 6.609,-2.949 9.298,-5.369c1.054,-0.945 2.339,-1.664 3.799,-2.055c1.46,-0.391 2.932,-0.412 4.317,-0.119c3.54,0.751 7.198,0.751 10.737,-0.001c1.386,-0.292 2.858,-0.271 4.318,0.12c1.46,0.391 2.745,1.11 3.798,2.055c2.69,2.42 5.858,4.249 9.299,5.368c1.346,0.44 2.611,1.194 3.679,2.263c1.069,1.068 1.823,2.333 2.262,3.679c1.12,3.441 2.949,6.609 5.369,9.298c0.945,1.054 1.664,2.339 2.055,3.799c0.391,1.46 0.412,2.932 0.119,4.317c-0.751,3.54 -0.751,7.198 0.001,10.737c0.292,1.386 0.271,2.858 -0.12,4.318c-0.391,1.46 -1.11,2.745 -2.055,3.798c-2.42,2.69 -4.249,5.858 -5.368,9.299c-0.44,1.346 -1.194,2.611 -2.263,3.679c-1.068,1.069 -2.333,1.823 -3.679,2.262c-3.441,1.12 -6.609,2.949 -9.298,5.369c-1.054,0.945 -2.339,1.664 -3.799,2.055c-1.46,0.391 -2.932,0.412 -4.317,0.119c-3.54,-0.751 -7.198,-0.751 -10.737,0.001c-1.386,0.292 -2.858,0.271 -4.318,-0.12c-1.46,-0.391 -2.745,-1.11 -3.798,-2.055c-2.69,-2.42 -5.858,-4.249 -9.299,-5.368c-1.346,-0.44 -2.611,-1.194 -3.679,-2.263c-1.069,-1.068 -1.823,-2.333 -2.262,-3.679c-1.12,-3.441 -2.949,-6.609 -5.369,-9.298c-0.945,-1.054 -1.664,-2.339 -2.055,-3.799c-0.391,-1.46 -0.412,-2.932 -0.119,-4.317c0.751,-3.54 0.751,-7.198 -0.001,-10.737c-0.292,-1.386 -0.271,-2.858 0.12,-4.318c0.391,-1.46 1.11,-2.745 2.055,-3.798c2.42,-2.69 4.249,-5.858 5.368,-9.299c0.44,-1.346 1.194,-2.611 2.263,-3.679c1.068,-1.069 2.333,-1.823 3.679,-2.262Z"/>
+                                  </clipPath>
+                                </defs>
+                            </svg>
+                            <h1 class="grand-hotel-regular" id="review-names">Emma Thomson</h1>
+                            <p class="underTitleFont vertical-text">ahahahaha I love starbucks! Starbucks so good!! mmm tasty! Ich love starbucks!!</p>
+                        </div> 
+                    </div>
+                </div>
+                <img id= "sixth-group-machine-icon" class="absolute opacity06" src="svgs/coffee_machine.svg"/>
+                <img id= "sixth-group-bean-icon-1" class="absolute opacity06" src="svgs/coffee_bean_icon.svg"/>
+                <img id= "sixth-group-mug-icon" class="absolute opacity06" src="svgs/coffee_mug.svg"/>
+            </div>
+
+            <div name="seventh-group" class="w100 flex flex-col container-height relative">
+                <img id="wave-seventh-upper" src="svgs/wave_upper_seventh_group.svg"/>
+                <div class="waveBox flex">
+                    <div class="w100 h100 flex items-center text-center flex-col">
+                        <div class="w100 h30 flex items-center justify-center">
+                           <h1 class="grand-hotel-regular weAreOpen">We are Open</h1> 
+                        </div>
+                        <div class="w100 h30 flex flex-col my-16">
+                            <p class="font-heavy openTimes">Monday - Friday</p>
+                            <p class="font-light openTimes">10:00 AM - 10:00 PM</p>
+                        </div>
+                        <div class="w100 h30 flex flex-col my-16">
+                            <p class="font-heavy openTimes">Saturday - Sunday</p>
+                            <p class="font-light openTimes">10:00 AM - 10:10 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <img src="svgs/wave_lower_seventh_group.svg"/>
+                <img id= "seventh-group-machine-icon" class="absolute opacity06" src="svgs/coffee_machine.svg"/>
+                <img id= "seventh-group-bean-icon-1" class="absolute opacity06" src="svgs/coffee_bean_icon.svg"/>
+                <img id= "seventh-group-bean-icon-2" class="absolute opacity06" src="svgs/coffee_bean_icon.svg"/>
+                <img id= "seventh-group-mug-icon" class="absolute opacity06" src="svgs/coffee_mug.svg"/>
+            </div>
+
+            <div name="eigth-group" class="w100 flex container-height relative">
+                <div class="flex w100 text-center justify-center flex-col items-center">
+                    <h1 class="grand-hotel-regular iconForHeader">Our Branches</h1> 
+                    <div id="eight-group" class="w100 flex flex-wrap text-center justify-center items-center">
+                        <div class="w30 flex flex-col justify-center items-center my-16 m-8" id="branch-section">
+                            <img class="location-holder" src="images/newyork-shop.jpeg"/>
+                            <img class="my-16" src="svgs/newyork_shop.svg"/>
+                            <p class="textFont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod animi illum molestias accusantium officiis nemo. Hic illum quo, nulla deserunt explicabo doloremque dolorem consequatur pariatur, nisi corrupti suscipit tempore dolores.</p>
+                        </div>
+                        <div class="w30 flex flex-col justify-center items-center my-16 m-8" id="branch-section">
+                            <img class="location-holder" src="images/jakarta-shop.webp"/>
+                            <img class="my-16" src="svgs/jakarta_shop.svg"/>
+                            <p class="textFont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod animi illum molestias accusantium officiis nemo. Hic illum quo, nulla deserunt explicabo doloremque dolorem consequatur pariatur, nisi corrupti suscipit tempore dolores.</p>
+                        </div>
+                        <div class="w30 flex flex-col justify-center items-center my-16 m-8" id="branch-section">
+                            <img class="location-holder" src="images/paris-shop.avif"/>
+                            <img class="my-16" src="svgs/paris_shop.svg"/>
+                            <p class="textFont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod animi illum molestias accusantium officiis nemo. Hic illum quo, nulla deserunt explicabo doloremque dolorem consequatur pariatur, nisi corrupti suscipit tempore dolores.</p>
+                        </div>
+                    </div>
+                </div>
+                <img id= "eigth-group-machine-icon" class="absolute opacity06" src="svgs/coffee_machine.svg"/>
+                <img id= "eigth-group-bean-icon-1" class="absolute opacity06" src="svgs/coffee_bean_icon.svg"/>
+                <img id= "eigth-group-bean-icon-2" class="absolute opacity06" src="svgs/coffee_bean_icon.svg"/>
+                <img id= "eigth-group-mug-icon" class="absolute opacity06" src="svgs/coffee_mug.svg"/>
+            </div>
+
+            <div name="ninth-group" class="w100 flex flex-col container-height">
+                <img src="svgs/wave_upper_ninth_group.svg"/>
+                <div class="waveBox flex flex-col">
+                    <div name="upper-cont" class="w100 flex">
+                        <div class="w50 h100 flex flex-col justify-center ml-16" id="footerLogoArea">
+                            <div class="w100 h10 flex" id="footer-information">
+                                <img class="footerLogo" src="svgs/coffee_bean.svg"/>
+                                <div id="yourLogoHeader" class="h40 flex text-bottom items-bottom fakeborder marginForHeader uppercase pointer">Your logo</div>
+                            </div>
+                        </div>
+                        <div class="w50 h100 flex" id="footerInfoBox">
+                            <div class="w100 h100 flex flex-col justify-center m-8" id="footerInformationSection">
+                                <div class="w100 h10">
+                                   <h1>Information.</h1> 
+                                </div>
+                                
+                                <p class="pointer">About us</p>
+                                <p class="pointer">Branches</p>
+                                <p class="pointer">Menu</p>
+                                <p class="pointer">Contact</p>
+                                <p class="pointer">Map</p>
+                            </div>
+                            <div class="w100 h100 flex flex-col justify-center m-8" id="footerContactSection">
+                                <div class="w100 h10">
+                                    <h1>Contact Us.</h1> 
+                                </div>
+                                <p class="pointer">Support</p>
+                                <p>your_id@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div name="lower-cont" class="w100 flex">
+                        <div class="header w-screen flex">
+                            <div class="h100 w50 flex ml-16" id="footer-page-links">
+                                <div id="pageContainer" class="flex">
+                                     <div class="h40 flex text-bottom items-bottom fakeborder marginForHeader pointer">Home</div>
+                                    <div class="h40 flex text-bottom items-bottom fakeborder marginForHeader pointer">About</div>
+                                    <div class="h40 flex text-bottom items-bottom fakeborder marginForHeader pointer">Menu</div>
+                                    <div class="h40 flex text-bottom items-bottom fakeborder marginForHeader pointer">Blog</div>
+                                    <div class="h40 flex text-bottom items-bottom fakeborder marginForHeader pointer">Shop</div>
+                                    <div class="h40 flex text-bottom items-bottom fakeborder marginForHeader pointer">Contact</div>
+                                </div>
+                                <div class="w100 h10 ml-16">
+                                    <i id="FooterMobileBar" class="fa-solid fa-bars"></i>
+                                </div>
+                            </div>
+                            <div class="h100 w50 flex justify-center items-center" id="footer-social-links">
+                                <div class="h40 w50 justify-around flex text-bottom items-center sizeForSocialIcons">
+                                    <i class="fa-brands fa-facebook-f pointer"></i>
+                                    <i class="fa-brands fa-instagram pointer"></i>
+                                    <i class="fa-brands fa-twitter pointer"></i>
+                                    <i class="fa-brands fa-youtube pointer"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

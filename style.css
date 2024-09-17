@@ -1,0 +1,1215 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    background: rgb(20,20,20,0.9);
+    color: white;
+    font-size: 16px;
+    font-weight: light;
+    letter-spacing: 0.1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    overflow-x: hidden;
+    white-space: normal;
+}
+.overflow-x-hidden{
+    overflow-x: hidden;
+}
+.w10 { width: 10%; }
+.w20 { width: 20%; }
+.w30 { width: 30%; }
+.w33 { width: 33.3333%; }
+.w40 { width: 40%; }
+.w45 { width: 45%; }
+.w50 { width: 50%; }
+.w60 { width: 60%; }
+.w65 { width: 65%; }
+.w70 { width: 70%; }
+.w80 { width: 80%; }
+.w90 { width: 90%; }
+.w95 { width: 95%; }
+.w100 { width: 100%; }
+
+.h10 { height: 10%; }
+.h15 { height: 15%; }
+.h20 { height: 20%; }
+.h30 { height: 30%; }
+.h40 { height: 40%; }
+.h50 { height: 50%; }
+.h60 { height: 60%; }
+.h70 { height: 70%; }
+.h80 { height: 80%; }
+.h90 { height: 90%; }
+.h100 { height: 100%; }
+
+.second-group-title-h{
+    min-height: 100px;
+}
+
+.w-screen{
+    width: 100vw;
+}
+.h-screen{
+    min-height: 100vh;
+}
+
+.header{
+    height: 10vh;
+}
+.headerLogo, .footerLogo{
+    width: 50px;
+    height: 80px;
+    margin-bottom: 24px;
+}
+.flex{
+    display: flex;
+}
+
+.flex-col{
+    flex-direction: column;
+}
+
+.justify-center{
+    justify-content: center;
+}
+.justify-around{
+    justify-content: space-around;
+}
+.justify-end{
+    justify-content: end;
+}
+.justify-start{
+    justify-content: start;
+}
+
+#yourLogoHeader{
+    margin-bottom: 26px;
+    cursor: pointer;
+}
+.pointer{
+    cursor: pointer;
+}
+.items-center{
+    align-items: center;
+}
+.items-bottom{
+    align-items: end;
+}
+
+.text-center{
+    text-align: center;
+}
+.text-bottom{
+    text-align: end;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+.homeBorder{
+    border-bottom: 2px solid #01A29D;
+}
+.fakeborder{
+    border-bottom: 1px solid rgb(20,20,20,0);
+    padding: 4px;
+    padding-bottom: 2px;
+}
+.marginForHeader{
+    margin: 14px;
+    font-size: 30px;
+}
+.sizeForSocialIcons{
+    font-size: 28px;
+    margin-bottom: 32px;
+}
+
+.main{
+    min-height: 90vh;
+    width: 100vw;
+}
+.waveBox{
+    background: #01A29D;
+    min-height: 150px;
+    margin: -1px;
+}
+.ml-16{
+    margin-left: 16px;
+}
+.my-16{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.m-8{
+    margin: 8px;
+}
+.m-2{
+    margin: 2px;
+}
+.m-4{
+    margin: 4px;
+}
+.orderButton{
+    font-size: 32px;
+    margin-top: 8px;
+    width: 180px;
+    height: 40px;
+    border-radius: 10px;
+    background:#01A29D;
+    transition: scale 0.5s ease;
+}
+.voucherButton{
+    min-width: 250px;
+    height: 40px;
+    background: #01A29D;
+    border-radius: 10px;
+    transition: scale 0.5s ease;
+    font-size: 32px;
+}
+.orderButton:hover, .voucherButton:hover, .voucher-validate:hover{
+    scale: 1.05;
+}
+.absolute{
+    position: absolute;
+}
+.relative{
+    position: relative;
+}
+
+.bg-black{
+    background: rgb(20,20,20,0.9);
+}
+.black{
+    color: black;
+}
+.container-height{
+    min-height: 200px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.voucher{
+    width: 65%;
+    border: 1px solid aqua;
+    min-height: 450px;
+    background: rgb(30 38 48 / 90%);
+    overflow:hidden;
+}
+#voucher-information{
+    top: 25%;
+    left: 30%;
+}
+#voucher-social-icons{
+    bottom: 15px;
+    left: 50%;
+    z-index: 3;
+}
+#voucher-machine-icon{
+    top: 65%;
+    left: 35%;
+}
+#voucher-mug-icon{
+    top: 12%;
+    left: 85%;
+}
+#voucher-bean-icon-1{
+    top: 73%;
+    left: 90%;
+}
+#voucher-bean-icon-2{
+    top: 15%;
+    left: 52%;
+    transform: rotate(300deg);
+}
+.voucher-logo-div{
+    z-index: 3;
+    color: white;
+    right: 0;
+    top: 0;
+}
+.voucher-icon-circle{
+    background: white;
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+.voucher-validate{
+    width: 40%;
+    height: 40px;
+    background: #01A29D;
+    border-radius: 2.5em;
+    transition: scale 0.5s ease;
+    font-size: 16px;
+}
+#voucher-logo-bean{
+    transform: rotate(335deg);
+    top: -11px;
+    left: 50px;
+}
+.voucher-wave-lower{
+    bottom:0;
+}
+.voucher-wave-upper{
+    top:0;
+    right:0;
+}
+.voucher-certificate{
+    left: 150px;
+    top: 50px;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.picture-holder{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid aqua;
+}
+.location-holder{
+    width: 250px;
+    height:250px;
+    object-fit: cover;
+    border: 1px solid aqua;
+}
+.gap25{
+    gap: 25px;
+}
+.iconForHeader{
+    font-size: 32px;
+}
+#mobileBar, #FooterMobileBar{
+    font-size: 32px;
+    display: none;
+}
+#FooterMobileBar{
+    margin-top: 12px;
+    font-size: 32px;
+}
+.grand-hotel-regular {
+    font-family: 'Grand Hotel', cursive;
+    font-size: calc(4vw + 25px);
+    font-weight: 300;
+}
+.weAreOpen{
+    font-size: 110px;
+}
+.openTimes{
+    font-size: 50px;
+}
+.title-first-group{
+    font-size: calc(7vw + 50px);
+}
+.font-light{
+    font-weight: light;
+}
+
+.font-heavy{
+    font-weight: bold;
+}
+.titleFont{
+    font-size: 28px;
+}
+.underTitleFont{
+    font-size: 24px;
+}
+.textFont{
+    font-size: 20px;
+}
+.thirdFourthGroupText{
+    font-size: 26px;
+    margin-top: -80px;
+}
+
+.section-group{
+    min-height: 400px;
+}
+
+.first-group-side-image{
+    width: 70%;
+    top: -75px;
+    right: 0;
+    z-index: -1;
+}
+#pageChoice{
+    transform: scale 0.5s ease;
+}
+#pageChoice:hover{
+    border-bottom: 1px solid #01A29D;
+    scale: 1.05;
+}
+.neg15{
+    transform: rotate(-15deg);
+}
+.deg45{
+    transform: rotate(45deg);
+}
+.deg70{
+    transform: rotate(70deg);
+}
+.deg90{
+    transform: rotate(90deg);
+}
+.deg315{
+    transform: rotate(315deg);
+}
+.deg300{
+    transform: rotate(300deg);
+}
+.deg330{
+    transform: rotate(330deg);
+}
+#first-group-machine-icon{
+    left: 28%;
+    top: 88%;
+}
+#first-group-mug-icon{
+    left: 55%;
+    top: 3%;
+}
+#first-group-bean-icon{
+    left: 41%;
+    top: 51%;
+}
+#second-group-machine-icon{
+    left: 48%;
+    top: 48%;
+}
+#second-group-mug-icon{
+    left: 89%;
+    top: 17%;
+}
+#second-group-bean-icon-1{
+    left: 46%;
+    top: 21%;
+}
+#second-group-bean-icon-2{
+    left: 15%;
+    top: 70%;
+}
+#second-group-bean-icon-3{
+    left: 91%;
+    top: 63%;
+    width: 65px;
+    height: 65px;
+}
+#second-group-bean-icon-4{
+    left: 18%;
+    top: 8%;
+    width: 80px;
+    height: 80px;
+}
+#first-group-extra-icon{
+    display: none;
+}
+.vertical-text{
+    text-orientation: mixed;
+    line-height: 1.5em;
+}
+#second-group-title-text{
+    margin-top: -80px;
+}
+#second-group-wavy-image{
+    height: 70%;
+    width: 70%;
+}
+#third-group-wavy-image, #fourth-group-wavy-image{
+    height: 60%;
+    width: 85%;
+}
+#need-pull-third-group, #need-pull-fourth-group{
+    margin-top: -100px;
+}
+#third-group-info, #fourth-group-info{
+    margin-top: 80px;
+}
+#third-group-wavy-image, #fourth-group-wavy-image{
+    margin-top: -40px;
+}
+
+#third-group-machine-icon{
+    left: 63%;
+    top: 78%;
+    width: 120px;
+    height: 120px;
+}
+#third-group-mug-icon{
+    left: 6%;
+    top: 13%;
+    height: 100px;
+    width: 100px;
+}
+#third-group-bean-icon-1{
+    left: 53%;
+    top: 14%;
+    width: 80px;
+    height: 80px;
+}
+#third-group-bean-icon-2{
+    left: 90%;
+    top: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+#fourth-group-machine-icon{
+    left: 12%;
+    top: 88%;
+    width: 120px;
+    height: 120px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1) rotate(60deg);
+}
+#fourth-group-mug-icon{
+    left: 91%;
+    top: 33%;
+    height: 100px;
+    width: 100px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1) rotate(-50deg);
+}
+#fourth-group-bean-icon-1{
+    left: 23%;
+    top: 5%;
+    width: 75px;
+    height: 75px;
+    transform: rotate(-60deg);
+}
+#fourth-group-bean-icon-2{
+    left: 45%;
+    top: 50%;
+    width: 90px;
+    height: 90px;
+    transform: rotate(110deg);
+}
+
+#fifth-group{
+    margin-top: 120px;
+}
+#fifth-group-machine-icon{
+    left: 89%;
+    top: 88%;
+    width: 120px;
+    height: 120px;
+    transform: rotate(60deg);
+}
+#fifth-group-mug-icon{
+    left: 5%;
+    top: 63%;
+    height: 100px;
+    width: 100px;
+    transform: rotate(325deg);
+}
+#fifth-group-bean-icon-1{
+    left: 88%;
+    top: 15%;
+    width: 75px;
+    height: 75px;
+    transform: rotate(310deg);
+}
+#sixth-group-machine-icon{
+    left: 4%;
+    top: 68%;
+    width: 120px;
+    height: 120px;
+    --webkit-transform: scaleX(-1);
+    transform: scaleX(-1) rotate(60deg);
+}
+#sixth-group-mug-icon{
+    left: 91%;
+    top: 54%;
+    height: 100px;
+    width: 100px;
+    --webkit-transform: scaleX(-1);
+    transform: scaleX(-1) rotate(-30deg);
+}
+#sixth-group-bean-icon-1{
+    left: 47%;
+    top: 27%;
+    width: 75px;
+    height: 75px;
+    transform: rotate(345deg);
+}
+#seventh-group-machine-icon{
+    left: 84%;
+    top: 27%;
+    transform: rotate(60deg);
+}
+#seventh-group-mug-icon{
+    left: 20%;
+    top: 54%;
+    height: 100px;
+    width: 100px;
+    transform: rotate(325deg);
+}
+#seventh-group-bean-icon-1{
+    left: 13%;
+    top: 19%;
+    transform: rotate(120deg);
+}
+#seventh-group-bean-icon-2{
+    left: 80%;
+    top: 68%;
+    width: 75px;
+    height: 75px;
+}
+#eigth-group-machine-icon{
+    left: 35%;
+    top: 96%;
+    transform: rotate(5deg);
+}
+#eigth-group-mug-icon{
+    left: 68%;
+    top: 98%;
+    height: 100px;
+    width: 100px;
+    transform: rotate(325deg);
+}
+#eigth-group-bean-icon-1{
+    left: 90%;
+    top: 5%;
+    transform: rotate(120deg);
+}
+#eigth-group-bean-icon-2{
+    left: 22%;
+    top: -6%;
+    width: 75px;
+    height: 75px;
+}
+.opacity06{
+    opacity: 0.6;
+}
+#review-names{
+    margin-top: -120px;
+}
+@media only screen and (max-width: 1441px) {
+    #third-group-wavy-image, #fourth-group-wavy-image{
+        margin-top: 0px;
+    }
+    .thirdFourthGroupText{
+        margin-top: -60px;
+    }
+}
+
+@media only screen and (max-width: 1025px) {
+    .first-group-side-image{
+        width: 70%;
+        top: 63px;
+        right: 0;
+        z-index: -1;
+    }
+    #first-group-bean-icon{
+        left: 41%;
+        top: 40%;
+    }
+    .thirdFourthGroupText{
+        margin-top: -40px;
+    }
+    #eigth-group-machine-icon{
+        left: 35%;
+        top: 103%;
+        transform: rotate(5deg);
+    }
+    .voucher{
+        width: 85%;
+    }
+    #fifth-group-mug-icon{
+        left: -3%;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    .first-group-side-image{
+        width: 70%;
+        top: 300px;
+        right: 0;
+        z-index: -1;
+    }
+    #mobileBar, #FooterMobileBar {
+      display: flex;
+      margin-top: 18px;
+    }
+    #pageContainer {
+        display: none;
+    }
+    #eight-group{
+        flex-direction: column;
+    }
+    #first-group-extra-icon{
+        display:flex;
+        top: 27%;
+        left: 78%;
+        --webkit-transform: scaleX(-1);
+        transform: scaleX(-1) rotate(20deg);
+    }
+    #second-group-machine-icon{
+        left: 48%;
+        top: 41%;
+    }
+    .thirdFourthGroupText{
+        margin-top: -20px;
+    }
+    #third-group-mug-icon{
+        top: 7%;
+    }
+    #fifth-group-machine-icon{
+        left: 83%;
+        top: 93%;
+    }
+    #fifth-group-mug-icon{
+        left: 5%;
+        top: 0%;
+    }
+    #fifth-group-bean-icon-1{
+        left: 83%;
+        top: 9%;
+    }
+    #sixth-group-machine-icon{
+        left: -3%;
+        top: 62%;
+    }
+    #sixth-group-mug-icon{
+        left: 86%;
+        top: 63%;
+    }
+    #sixth-group-bean-icon-1{
+        left: 46%;
+        top: 28%;
+    }
+    #eigth-group-machine-icon{
+        left: 12%;
+        top: 68%;
+        transform: rotate(5deg);
+    }
+    #eigth-group-mug-icon{
+        left: 73%;
+        top: 85%;
+        height: 100px;
+        width: 100px;
+        transform: rotate(325deg);
+    }
+    #eigth-group-bean-icon-1{
+        left: 90%;
+        top: 38%;
+        transform: rotate(120deg);
+    }
+    #eigth-group-bean-icon-2{
+        left: 14%;
+        top: 12%;
+        width: 75px;
+        height: 75px;
+    }
+    #branch-section{
+        width: 90%;
+    }
+    .sizeForSocialIcons{
+        margin-bottom: 0px;
+    }
+    .voucher{
+        width: 95%;
+    }
+    #voucher-coffee-picture{
+        left: -40px;
+    }
+    #voucher-information{
+        top: 30%;
+    }
+    #voucher-bean-icon-2{
+        left: 60%;
+    }
+    #voucher-logo-bean{
+        left: 25px;
+    }
+    #voucher-social-icons{
+        width: 60%;
+        left: 40%;
+    }
+    .voucher-validate{
+        width: 50%;
+    }
+    .voucher-certificate{
+        top: 75px;
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    #coffee-main-title{
+        margin-left: 0;
+    }
+    #first-group-coffee-mug{
+        opacity: 0.2;
+        width: 75%;
+        scale: 1.75;
+        top:45%;
+        right:80px;
+    }
+    #second-group-wavebox{
+        flex-direction: column;
+    }
+    #second-group-info{
+        width: 100%;
+    }
+    #first-group-text-block{
+        width: 100%;
+        justify-content: center;
+        align-items:center;
+        text-align: center;
+    }
+    .headerLogo{
+        margin-bottom: 40px;
+        height: 36px;
+        width: 36px;
+    }
+    .footerLogo{
+        height: 36px;
+        margin-top: 25px;
+    }
+    .marginForHeader{
+        font-size:24px;
+        margin-right: 50px;
+        margin-bottom: 24px;
+    }
+    #mobileBar {
+        margin-top: 0px;
+    }
+    #FooterMobileBar{
+        display: none;
+    }
+
+    #first-group-machine-icon{
+        left: 3%;
+        top: 83%;
+    }
+    #first-group-mug-icon{
+        left: 78%;
+        top: -11%;
+    }
+    #first-group-bean-icon{
+        left: 11%;
+        top: 32%;
+    }
+    #first-group-extra-icon{
+        display:none;
+    }
+    #second-group-machine-icon{
+        left: 55%;
+        top: 66%;
+    }
+    #second-group-mug-icon{
+        left: 85%;
+        top: 34%;
+    }
+    #second-group-bean-icon-1{
+        left: 8%;
+        top: 23%;
+    }
+    #second-group-bean-icon-2{
+        left: 11%;
+        top: 57%;
+    }
+    #second-group-bean-icon-3{
+        left: 78%;
+        top: 90%;
+        width: 65px;
+        height: 65px;
+    }
+    #second-group-bean-icon-4{
+        left: 68%;
+        top: 8%;
+        width: 80px;
+        height: 80px;
+    }
+    #need-extension-second-group, #need-extension-third-group, #need-extension-fourth-group{
+        width: 100%;
+    }
+    #third-group, #fourth-group{
+        flex-direction: column;
+    }
+    #third-group-text, #fourth-group-text{
+        text-align: center;
+    }
+    #third-group-info, #fourth-group-info{
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    #third-group-machine-icon{
+        left: -3%;
+        top: 78%;
+        width: 120px;
+        height: 120px;
+    }
+    #third-group-mug-icon{
+        left: 0%;
+        top: 5%;
+        height: 100px;
+        width: 100px;
+    }
+    #third-group-bean-icon-1{
+        left: 83%;
+        top: 18%;
+        width: 80px;
+        height: 80px;
+    }
+    #third-group-bean-icon-2{
+        left: 78%;
+        top: 66%;
+        width: 100px;
+        height: 100px;
+    }
+    #fourth-group-machine-icon{
+        left: 8%;
+        top: 96%;
+        width: 100px;
+        height: 100px;
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1) rotate(90deg);
+    }
+    #fourth-group-mug-icon{
+        left: 91%;
+        top: 0%;
+        height: 100px;
+        width: 100px;
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1) rotate(-50deg);
+    }
+    #fourth-group-bean-icon-1{
+        left: 0%;
+        top: 22%;
+        width: 75px;
+        height: 75px;
+        transform: rotate(-60deg);
+    }
+    #fourth-group-bean-icon-2{
+        left: 86%;
+        top: 56%;
+        width: 90px;
+        height: 90px;
+        transform: rotate(110deg);
+    }
+    #fifth-group-machine-icon{
+        left: 83%;
+        top: 93%;
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1) rotate(45deg);
+    }
+    #fifth-group-mug-icon{
+        left: -2%;
+        top: 90%;
+    }
+    #fifth-group-bean-icon-1{
+        left: 83%;
+        top: -15%;
+    }
+    #sixth-group-info-container{
+        flex-direction: column;
+    }
+    #sixth-group-info{
+        width: 100%;
+    }
+    #sixth-group-mug-icon{
+        left: 75%;
+        top: 73%;
+    }
+    #sixth-group-bean-icon-1{
+        left: 78%;
+        top: 40%;
+    }
+    #sixth-group-machine-icon{
+        left: -3%;
+        top: 59%;
+    }
+    #sixth-group-mug-icon{
+        left: 81%;
+        top: 76%;
+    }
+    .weAreOpen{
+        font-size: 85px;
+    }
+    .openTimes{
+        font-size: 24px;
+    }
+    #seventh-group-mug-icon{
+        left: -2%;
+        top: 59%;
+    }
+    #eigth-group-bean-icon-1{
+        left: 85%;
+        top: 38%;
+        transform: rotate(120deg);
+    }
+    #eigth-group-bean-icon-2{
+        left: 3%;
+        top: 18%;
+    }
+    #eigth-group-machine-icon{
+        left: -2%;
+        top: 68%;
+    }
+    #footer-information{
+        display: none;
+    }
+    #footer-social-links{
+        width: 100%;
+    }
+    #footer-page-links{
+        display: none;
+    }
+    #footerLogoArea{
+        display: none;
+    }
+    #footerInfoBox{
+        width: 100%;
+    }
+    #footerInformationSection, #footerContactSection{
+        align-items: center;
+        text-align: center;
+    }
+    .voucher{
+        width: 98%;
+    }
+    #voucher-coffee-picture{
+        left: -170px;
+    }
+    #voucher-information{
+        top: 30%;
+    }
+    #voucher-bean-icon-1{
+        top: 67%;
+        left: 92%;
+    }
+    #voucher-bean-icon-2{
+        display: none;
+    }
+    #voucher-machine-icon{
+        top: 71%;
+        left: 20%;
+        width: 75px;
+        height: 75px;
+    }
+    #voucher-mug-icon{
+        left: 73%;
+    }
+    #voucher-logo-bean{
+        left: -40px;
+    }
+    #voucher-social-icons{
+        width: 100%;
+        left: 1%;
+        bottom: 0;
+    }
+    .voucher-validate{
+        width: 65%;
+        font-size: 12px;
+    }
+    .voucher-certificate{
+        top: 100px;
+        left: 35px;
+        width: 100px;
+        height: 100px;
+    }
+    .voucher-wave-lower, .voucher-wave-upper{
+        width:100%;
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    #fifth-group-mug-icon{
+        top: 93%;
+    }
+    #voucher-bean-icon-1{
+        top: 70%;
+        left: 92%;
+    }
+    .voucher-validate{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 72%;
+    }
+    #voucher-social{
+        display: none;
+    }
+    #voucher-coffee-picture{
+        left: -180px;
+        opacity: 0.5;
+    }
+    .voucher-certificate{
+        top: 75px;
+        left: 25px;
+    }
+    #voucher-logo-upper{
+        margin-left: 12px;
+        margin-bottom: 12px;
+    }
+    #voucher-social-icons{
+        bottom: 4px;
+        gap: 35px;
+    }
+}
+
+@media only screen and (max-width: 321px) {
+    #first-group-coffee-mug{
+        opacity: 0.2;
+        width: 75%;
+        scale: 1.75;
+        top:60%;
+        right:45px;
+    }
+    #first-group-machine-icon{
+        left: -2%;
+        top: 84%;
+    }
+    #first-group-mug-icon{
+        left: 78%;
+        top: -11%;
+    }
+    #first-group-bean-icon{
+        left: 5%;
+        top: 28%;
+    }
+    #first-group-extra-icon{
+        display:none;
+    }
+    #second-group-machine-icon{
+        left: 55%;
+        top: 63%;
+    }
+    #second-group-mug-icon{
+        left: 81%;
+        top: 38%;
+    }
+    #second-group-order-now{
+        margin-left: 0;
+    }
+    #third-group-machine-icon{
+        left: -13%;
+        top: 81%;
+        width: 120px;
+        height: 120px;
+    }
+    #third-group-mug-icon{
+        left: -2%;
+        top: 0%;
+        height: 100px;
+        width: 100px;
+    }
+    #third-group-bean-icon-1{
+        left: 83%;
+        top: 18%;
+        width: 80px;
+        height: 80px;
+    }
+    #third-group-bean-icon-2{
+        left: 78%;
+        top: 66%;
+        width: 100px;
+        height: 100px;
+    }
+    #fifth-group-mug-icon{
+        left: -8%;
+        top: 93%;
+    }
+    #fifth-group-machine-icon{
+        top: 96%;
+    }
+    #sixth-group-machine-icon{
+        left: -11%;
+        top: 56%;
+    }
+    #sixth-group-mug-icon{
+        left: 81%;
+        top: 76%;
+    }
+    #sixth-group-bean-icon-1{
+        left: 79%;
+        top: 42%;
+    }
+    #seventh-group-bean-icon-1{
+        left: 2%;
+        top: 17%;
+    }
+    #seventh-group-mug-icon{
+        left: -7%;
+        top: 63%;
+    }
+    #seventh-group-machine-icon{
+        left: 85%;
+        top: 23%;
+    }
+    #eigth-group-machine-icon{
+        left: -17%;
+        top: 56%;
+        transform: rotate(60deg);
+    }
+    #eigth-group-mug-icon{
+        left: 80%;
+        top: 83%;
+    }
+    #eigth-group-bean-icon-1{
+        left: 85%;
+        top: 32%;
+    }
+    #eigth-group-bean-icon-2{
+        left: -11%;
+        top: 20%;
+    }
+    #footerInfoBox{
+        flex-direction: column;
+    }
+    #voucher-bean-icon-1{
+        top: 86%;
+        left: 92%;
+    }
+    #voucher-coffee-picture{
+        left: -170px;
+        top: -15px;
+    }
+    .voucher-certificate{
+        left: 35px;
+    }
+    #voucher-machine-icon{
+        display: none;
+    }
+    #voucher-discount-text{
+        line-height: 1.1em;
+    }
+    #voucher-social-icons{
+        justify-content: start;
+    }
+    .voucher-wave-lower{
+        width: 90%;
+    }
+    #voucher-mug-icon{
+        left: 83%;
+        top: 17%;
+    }
+    .voucher-logo-div{
+        width: 50%;
+    }
+    #voucher-logo-upper{
+        margin-bottom: 18px;
+    }
+    .voucher-wave-upper{
+        width: 110%;
+    }
+    #voucher-logo-bean{
+        margin-top: 4px;
+        margin-left: 10px;
+        width: 40px;
+        height: 40px;
+    }
+    .voucher-validate{
+        width: 85%;
+        margin-top: 0px;
+    }
+}
+
+
